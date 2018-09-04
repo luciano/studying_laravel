@@ -17,3 +17,15 @@
         You are Logged Out as <strong>ADMIN</strong>
     </p>
 @endif
+
+@auth("web")
+    You're a user!
+@endauth
+
+@auth("admin")
+    You're an administrator!
+@endauth
+
+@guest
+    You're not logged in!
+@endguest
